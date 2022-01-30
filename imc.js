@@ -12,13 +12,13 @@ function imc () {
         let classificacao = '';
 
         if (valorIMC < 18.5){
-            classificacao = 'Magreza.';
+            classificacao = 'com Magreza.';
         }else if (valorIMC < 25) {
             classificacao = 'Normal. Parabéns!!!';
         }else if (valorIMC < 30){
-            classificacao = 'SobrePeso.';
+            classificacao = 'com SobrePeso.';
         }else if (valorIMC > 30){
-            classificacao = 'Obesidade.';
+            classificacao = 'com Obesidade.';
         };
         resultado.textContent = `Seu IMC é ${valorIMC} e você está ${classificacao}`;
         
